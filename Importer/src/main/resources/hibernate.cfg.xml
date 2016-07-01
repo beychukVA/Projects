@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/msmguide_test</property>
+        <property name="hibernate.connection.username">msm-guide</property>
+        <property name="hibernate.connection.password">612287</property>
+        <property name="show_sql">false</property>
+
+        <mapping class="com.x256n.core.msmguide.domain.BuildingEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.BuildingcommentEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.DecorationsEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.DecorationsmonsterEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.IconEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.IslandEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.IslandcastleEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.IslandcommentEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.IslanddecorationsEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.IslandimprovementEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.IslandmonsterEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.LocalizedEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonsterEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonsterappetencedecorationsEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonsterappetencemonsterEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonstercreateEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonstercreatetimeEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonsterelementEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonsterliveEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonstermoveEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.UserEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonsterprofitgoldlevelEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonsterprofitgoldtimeEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonsterprofitsplinterlevelEntity" />
+        <mapping class="com.x256n.core.msmguide.domain.MonsterprofitsplintertimeEntity" />
+    </session-factory>
+</hibernate-configuration>
